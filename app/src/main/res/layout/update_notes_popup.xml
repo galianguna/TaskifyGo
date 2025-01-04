@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/addNotesPopupLayout"
+    android:layout_width="390dp"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/addNotesPopup"
+        android:layout_width="390dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custome_bkg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/titleInputLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/input_field_dialogbg"
+            app:boxBackgroundColor="@color/popupFieldBg"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:textColor="@color/black"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/titleUpdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:backgroundTint="@color/transparent"
+                android:hint="Enter title"
+                android:minHeight="50dp"
+                android:textStyle="bold"
+                android:paddingLeft="15dp"
+                android:textSize="18sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/notesInput"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/input_field_dialogbg"
+            app:boxBackgroundColor="@color/popupFieldBg"
+            app:layout_constraintBottom_toTopOf="@+id/adminView"
+            app:layout_constraintTop_toBottomOf="@+id/titleInputLayout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/notesUpdate"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:hint="Enter notes"
+                android:minHeight="48dp"
+                android:inputType="textMultiLine"
+                android:gravity="top|start"
+                android:backgroundTint="@color/transparent"
+                android:background="@null"
+                android:paddingLeft="15dp"
+                android:textSize="18sp"
+
+                android:overScrollMode="always"
+                android:scrollbarStyle="insideInset"
+                android:scrollbars="vertical"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <TextView
+            android:id="@+id/adminView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Contact admin"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.501"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/notesInput" />
+
+        <Button
+            android:id="@+id/deleteDone"
+            android:layout_width="120dp"
+            android:layout_height="49dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/login_page_buttonlogin"
+            android:text="delete"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/adminView"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Button
+            android:id="@+id/updateDone"
+            android:layout_width="120dp"
+            android:layout_height="49dp"
+            android:layout_marginStart="116dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/login_page_buttonlogin"
+            android:text="update"
+            app:layout_constraintStart_toEndOf="@+id/deleteDone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/adminView" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

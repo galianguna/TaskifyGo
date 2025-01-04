@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FBFBFB</color>
+    <color name="white">#DC2E2E2E</color>
+    <color name="popupFieldBg">#F5FBFBFB</color>
+    <color name="lavender">#8692f7</color>
+    <color name="selectedRowBgColor">#4E5BA0</color>
+    <color name="bgGray">#F8F8F8</color>
+    <color name="bgBottomBar">#282828</color>
+    <color name="lightBlue">#457790</color>
+
+
+</resources>

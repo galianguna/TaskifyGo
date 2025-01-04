@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">TaskifyGo</string>
+    <string name="appDetails">TaskifyGo\nGalian\ngalianguna46@gmail.com</string>
+    <string name="adminInfo">galianguna46@gmail.com\nlong press reminders to delete.\nlong press add button to logout.</string>
+    <string name="app_local_Store">TaskifyGo@001</string>
+
+    <string-array name="reminder_frequencies">
+        <item>When you need</item>
+        <item>Once</item>
+        <item>Daily</item>
+        <item>Weekly</item>
+        <item>Monthly</item>
+        <item>Yearly</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
